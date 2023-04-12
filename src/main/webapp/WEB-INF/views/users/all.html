@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All users</title>
+</head>
+<style>
+    body{display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
+</style>
+<body>
+<table border="1">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>surname</th>
+  </tr>
+  <tr th:each="user : ${users}">
+<td th:text="${user.getId}"></td>
+    <td th:text="${user.getName}"></td>
+    <td th:text="${user.getSurname}"></td>
+
+  </tr>
+
+</table>
+</body>
+</html>
