@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns:th="http://thymeleaf.org">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -12,11 +12,12 @@
 </style>
 <body>
 <h2>New user :</h2>
-<form th:action="@{/newUser}" th:method="POST" th:object="${user}">
+<form action="/newUser" method="POST" object="${user}">
     <label for="login">login </label>
     <br>
     <input type="text" name="login" id="login">
     <br>
+
     <label for="password">password </label>
     <br>
     <input type="password" name="password" id="password">

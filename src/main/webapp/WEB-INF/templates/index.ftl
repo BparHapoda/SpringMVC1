@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns:th="http://thymeleaf.org">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Root page</title>

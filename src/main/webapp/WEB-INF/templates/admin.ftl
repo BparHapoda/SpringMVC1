@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns:th="http://thymeleaf.org">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -8,10 +8,10 @@
     body{display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;}
+        align-items: center;
+    font-size: larger;}
 </style>
 <body>
-<span th:text="${user.getLogin}" ></span>
-entered to system
+<a href="all">All users list</a>
 </body>
 </html>

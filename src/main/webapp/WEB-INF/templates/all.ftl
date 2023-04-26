@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns:th="http://thymeleaf.org">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>All users</title>
@@ -17,13 +17,14 @@
     <th>name</th>
     <th>surname</th>
   </tr>
-  <tr th:each="user : ${users}">
-<td th:text="${user.getId}"></td>
-    <td th:text="${user.getName}"></td>
-    <td th:text="${user.getSurname}"></td>
+   <#list users as user >
+    <tr>
+<td>${user.id}</td>
+    <td>${user.name}"</td>
+    <td>${user.surname}"</td>
 
   </tr>
-
+</#list>
 </table>
 </body>
 </html>
